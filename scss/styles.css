@@ -1,0 +1,773 @@
+.font-hind, h3, h2, h1 {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  text-align: left;
+  color: white;
+}
+
+.font-montserrat, .main-page-footer .margin-left, .main-btn, .main-header .header-navi-btn a, p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4.166667vw;
+}
+
+h2 {
+  font-size: 2.5vw;
+}
+
+h3 {
+  font-size: 2.083333vw;
+}
+
+p {
+  font-size: 1.041667vw;
+}
+
+body {
+  width: 100%;
+  background: #060d1a;
+  overflow-x: hidden;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.125vw 3.75vw;
+  transition: 0.5s;
+  z-index: 2;
+}
+.main-header.scrolled {
+  background: #060d1a;
+  box-shadow: 0 0 0.520833vw #060d1a;
+}
+.main-header .header-navi-btn {
+  display: flex;
+  align-items: center;
+}
+.main-header .header-navi-btn nav {
+  display: flex;
+}
+.main-header .header-navi-btn a {
+  font-size: 1.25vw;
+  text-decoration: none;
+  margin-right: 4.322917vw;
+}
+.main-header a:hover {
+  color: #ff5530;
+}
+.main-header .burger-sign {
+  display: none;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.main-header .drop-menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background: #060d1a;
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+.main-header .drop-menu a {
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #444;
+  color: white;
+  transition: background-color 0.5s;
+}
+.main-header .drop-menu a:hover {
+  color: #ff5530;
+  background-color: #333;
+}
+
+.main-btn {
+  width: 17.239583vw;
+  height: 3.333333vw;
+  border-radius: 0.520833vw;
+  border: 0;
+  background: linear-gradient(90deg, #ff5637 -18.18%, #f7084c 100%);
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.041667vw;
+  border: 0.052083vw solid #ff5530;
+}
+.main-btn:hover {
+  background: transparent;
+}
+.main-btn.hole {
+  background-color: transparent;
+  background-image: none;
+}
+.main-btn.hole:hover {
+  background: linear-gradient(90deg, #ff5637 -18.18%, #f7084c 100%);
+}
+.main-btn .burger-menu {
+  display: none;
+}
+
+.main-page {
+  padding: 9.583333vw 4.6875vw 4.6875vw 4.6875vw;
+  height: 100vh;
+  background-image: url(../img/guy-boxing-stance-dark-room.png);
+  background-size: 78.4vw auto;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-page .main-page-text-part {
+  margin-top: auto;
+  margin-bottom: 5.4vw;
+}
+.main-page .main-page-text-part h1 {
+  max-width: 52.083333vw;
+}
+.main-page .main-page-text-part p {
+  max-width: 48.75vw;
+  margin-top: 1.614583vw;
+  line-height: 1.333333vw;
+}
+.main-page .main-page-text-part .main-btn {
+  margin-top: 2.96875vw;
+}
+
+.main-page-special-text {
+  margin-top: 3.333333vw;
+}
+
+.guy-boxing {
+  position: absolute;
+  top: 0;
+  right: -5.208333vw;
+  width: 67.1875vw;
+  height: 46.614583vw;
+  z-index: -1;
+}
+
+.main-page-footer {
+  display: flex;
+  padding-top: 4.947917vw;
+}
+.main-page-footer .footer-item {
+  width: 33%;
+  max-width: 26.088542vw;
+}
+.main-page-footer .margin-left {
+  margin-left: 0.78125vw;
+  font-size: 1.041667vw;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer-telephone {
+  display: flex;
+}
+
+.footer-work-hours {
+  display: flex;
+}
+
+.footer-address {
+  display: flex;
+}
+
+.training-page {
+  padding: 14.59375vw 4.6875vw 0 4.6875vw;
+  background-image: url(../img/woman-holding-weights-near-barbells.png);
+  background-repeat: no-repeat;
+  background-position: right top 233%;
+  background-size: 53.8vw auto;
+}
+.training-page h2 {
+  text-align: center;
+  font-size: 2.5vw;
+}
+
+.items-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3.229167vw;
+  justify-content: space-between;
+}
+.items-row .item {
+  width: calc(50% - 1.614583vw);
+  display: flex;
+}
+.items-row .item:nth-child(n+3) {
+  margin-top: 9.114583vw;
+}
+.items-row .item .left {
+  min-width: 9.6875vw;
+}
+.items-row .item p {
+  font-size: 1.25vw;
+  line-height: 2.083333vw;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 1.197917vw;
+  max-width: 29.791667vw;
+}
+
+.icon {
+  position: relative;
+  width: 2.604167vw;
+  height: 2.604167vw;
+  margin: 2.5vw 0 0 1.770833vw;
+  z-index: -1;
+}
+.icon.big-icon {
+  width: 5.208333vw;
+  height: 5.208333vw;
+}
+.icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.icon .blum {
+  width: 5.989583vw;
+  height: 5.260417vw;
+  border-radius: 100%;
+  background-color: #a90a3d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(0.520833vw);
+  z-index: 0;
+}
+
+.page-with-video {
+  padding: 11.39375vw 4.6875vw 8.3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-with-video h3 {
+  font-size: 48px;
+}
+.page-with-video h2 {
+  font-size: 4.166667vw;
+}
+.page-with-video .title-above-video-block {
+  margin: 1.68125vw 0 0 0;
+}
+.page-with-video .video-block {
+  position: relative;
+  width: 68.75vw;
+  height: 31.302083vw;
+  border-radius: 1.041667vw;
+  box-shadow: 0 0 100px #a90a3d;
+  margin-top: 5rem;
+  background-image: url(../img/strong-muscular-guy1.svg);
+  background-size: 821px auto;
+  background-position: 160% 0%;
+  background-repeat: no-repeat;
+  transition: box-shadow 0.3s;
+}
+.page-with-video .video-block .video-img {
+  position: absolute;
+  top: -0.520833vw;
+  right: -15.591667vw;
+  width: 42.2vw;
+}
+.page-with-video .video-block .video-text {
+  padding: 5.208333vw 2.604167vw;
+  font-weight: 900;
+  font-size: 3.90625vw;
+  color: transparent;
+  -webkit-text-stroke: 0.052083vw white;
+}
+.page-with-video .video-block .contain-video-btn {
+  display: flex;
+  justify-content: center;
+}
+.page-with-video .video-block .contain-video-btn svg {
+  cursor: pointer;
+}
+.page-with-video .video-block:hover {
+  box-shadow: 0 0 100px 0 #ff5530;
+}
+
+.page-about-us {
+  padding: 2.604167vw 4.6875vw 5.520833vw;
+  background-image: url(../img/page-about-us-bg.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 50vw auto;
+}
+.page-about-us h2 {
+  text-align: center;
+}
+.page-about-us .items-row {
+  margin-top: 3.854167vw;
+}
+.page-about-us .items-row .item {
+  width: calc(50% - 5.15625vw);
+}
+.page-about-us .items-row .item:nth-child(n+3) {
+  margin-top: 2.604167vw;
+}
+
+.page-with-goals {
+  padding: 6.09375vw 8.229167vw 9.9vw;
+  background-image: url(../img/page-with-goals-bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 69vw auto;
+}
+.page-with-goals h2 {
+  font-size: 3.125vw;
+  text-align: center;
+}
+.page-with-goals .goals-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 4.791667vw;
+}
+.page-with-goals .goals-row .goal {
+  width: 24.408333vw;
+  background-color: #060d1a;
+  border-radius: 1.041667vw;
+  box-shadow: 0 0 4.166667vw #a90a3d;
+  padding: 3.75vw 2.604167vw 3.125vw;
+}
+.page-with-goals .goals-row .goal .icon {
+  z-index: 1;
+  margin: auto;
+}
+.page-with-goals .goals-row .goal p {
+  font-size: 1.25vw;
+  text-align: center;
+  line-height: 2.083333vw;
+  margin-top: 1.597917vw;
+}
+.page-with-goals .goals-row .goal:hover {
+  box-shadow: 0 0 45px #ff5530;
+}
+.page-with-goals .bottom-h2 {
+  margin-top: 9.583333vw;
+}
+.page-with-goals .btns-row {
+  margin-top: 4.791667vw;
+  justify-content: center;
+  display: flex;
+}
+.page-with-goals .btns-row .main-btn:nth-child(2) {
+  margin-left: 6.458333vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-header {
+    padding: 2rem 3rem;
+  }
+  .btn-in-header {
+    display: none;
+  }
+  .header-navi-btn a {
+    margin-right: 7.9vw;
+    font-size: 2.4vw;
+  }
+  .header-navi-btn a:last-child {
+    margin-right: 0;
+  }
+  .main-btn {
+    width: 32.4vw;
+    height: 6.2vw;
+    border-radius: 0.8vw;
+    font-size: 1.9vw;
+  }
+  .main-page {
+    height: auto;
+    background-size: 102.4vw auto;
+    background-position: bottom 15.7vw right -16vw;
+  }
+  .main-page .main-page-text-part {
+    padding: 90px 0 0 30px;
+    margin-top: 0;
+  }
+  .main-page .main-page-text-part h1 {
+    font-size: 6.3vw;
+    width: 100%;
+    max-width: initial;
+    line-height: 1.2;
+  }
+  .main-page .main-page-text-part .main-page-text {
+    font-size: 20px;
+    max-width: 56vw;
+    line-height: 1.2;
+    margin-top: 4px;
+  }
+  .main-page .main-page-text-part .main-btn {
+    margin-top: 14.96875vw;
+    margin-left: 1.3vw;
+  }
+  .main-page .main-page-text-part .main-page-special-text {
+    margin-top: 3.96875vw;
+    margin-left: 1.3vw;
+    font-size: 20px;
+  }
+  .main-page-footer {
+    padding-top: 11.447917vw;
+    justify-content: space-between;
+  }
+  .main-page-footer .footer-item {
+    width: 33%;
+    max-width: auto;
+  }
+  .main-page-footer .footer-item svg {
+    min-width: 6.2vw;
+  }
+  .main-page-footer .margin-left {
+    font-size: 1.9vw;
+    margin-left: 2vw;
+  }
+  .training-page {
+    background-position: right -4vw bottom 0vw;
+    background-size: 93vw auto;
+    padding-bottom: 22vw;
+  }
+  .training-page h2 {
+    font-size: 4.7vw;
+  }
+  .training-page .items-row {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12.1vw;
+  }
+  .training-page .items-row .item {
+    width: 90%;
+  }
+  .training-page .items-row .item:nth-child(n+2) {
+    margin-top: 17.3vw;
+  }
+  .training-page .items-row .item .left {
+    min-width: 17.9875vw;
+  }
+  .training-page .items-row .item p {
+    font-size: 24px;
+    max-width: 55vw;
+    margin-top: 2.2vw;
+    line-height: 40px;
+  }
+  .training-page .items-row .item h3 {
+    font-size: 40px;
+  }
+  .training-page .items-row .item .icon {
+    width: 5.1vw;
+    height: 5.1vw;
+    margin: 4.5vw 0 0 2.770833vw;
+  }
+  .training-page .items-row .item .icon .blum {
+    width: 10.1vw;
+    height: 9.1vw;
+    filter: blur(10px);
+  }
+  .page-with-video .video-block {
+    width: 660px;
+    height: 520px;
+    border-radius: 20px;
+    background-size: 745px auto;
+    background-position: -251% 0%;
+  }
+  .page-with-video .video-block .contain-video-btn svg {
+    width: 58px;
+    height: 59px;
+    margin-top: 40px;
+  }
+  .page-with-video .video-text {
+    width: 350px;
+    padding: 3.208333vw 2.604167vw;
+    word-wrap: break-word;
+    font-size: 36px;
+  }
+  .page-about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    background-size: 73rem auto;
+  }
+  .page-about-us h2 {
+    font-size: 48px;
+  }
+  .page-about-us .items-row {
+    display: block;
+  }
+  .page-about-us .items-row .item {
+    width: 100%;
+  }
+  .page-about-us .items-row .item .left {
+    margin-right: 70px;
+  }
+  .page-about-us .items-row .item .left .icon {
+    margin: 20px 0 0 18px;
+    width: 70px;
+    height: 74px;
+  }
+  .page-about-us .items-row .item h3 {
+    font-size: 40px;
+    margin-top: 17px;
+  }
+  .page-about-us .items-row .item p {
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 572px;
+  }
+  .page-about-us .items-row .item .blum {
+    width: 100px;
+    height: 90px;
+    filter: blur(10px);
+  }
+  .page-with-goals {
+    margin-top: 7rem;
+    text-align: center;
+    background-position: 50% 104%;
+    background-size: 67rem auto;
+  }
+  .page-with-goals h2 {
+    width: 640px;
+    font-size: 60px;
+    line-height: 80px;
+    word-wrap: break-word;
+    margin: 0 auto;
+  }
+  .page-with-goals .goals-row {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-with-goals .goals-row .goal {
+    margin-top: 100px;
+    height: 379px;
+    width: 478px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 45px #a90a3d;
+  }
+  .page-with-goals .goals-row .goal .icon.big-icon {
+    width: 100px;
+    height: 100px;
+  }
+  .page-with-goals .goals-row .goal p {
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+.display-flex {
+  display: flex !important;
+}
+
+@media screen and (max-width: 767px) {
+  .main-header {
+    padding: 15px 20px;
+  }
+  .main-header .header-navi-btn {
+    display: none;
+  }
+  .main-header .burger-sign {
+    display: block;
+  }
+  .main-page {
+    background-image: url(../img/shadow.png);
+    background-size: 600px auto;
+    background-position: -50% 40%;
+    background-repeat: no-repeat;
+  }
+  .main-page .main-page-text-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0 0 10px;
+  }
+  .main-page .main-page-text-part h1 {
+    max-width: 310px;
+    font-size: 32px;
+  }
+  .main-page .main-page-text-part .main-page-text {
+    max-width: 310px;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 25.6px;
+  }
+  .main-page .main-page-text-part .main-btn {
+    width: 230px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  .main-page .main-page-text-part .main-page-special-text {
+    margin-top: 30px;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .main-page .main-page-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-page .main-page-footer .margin-left {
+    font-size: 20px;
+  }
+  .main-page .main-page-footer .footer-address-text {
+    width: 225px;
+  }
+  .main-page .footer-item {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+  .training-page {
+    background-position: 89% 70%;
+    background-size: 249vw auto;
+    padding-bottom: 0;
+  }
+  .training-page h2 {
+    width: 340px;
+    font-size: 32px;
+  }
+  .training-page .items-row .item .left {
+    display: none;
+  }
+  .training-page .items-row .item p {
+    max-width: 340px;
+    font-size: 20px;
+  }
+  .page-with-video h3 {
+    font-size: 24px;
+  }
+  .page-with-video .title-above-video-block {
+    margin: 1rem 0 0 0;
+    font-size: 48px;
+    text-align: center;
+  }
+  .page-with-video .video-block {
+    width: 278px;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 2rem;
+    box-shadow: 0 0 100px 0 #a90a3d;
+    background-size: 235px auto;
+    background-position: 133px 0%;
+  }
+  .page-with-video .video-block .video-text {
+    width: 170px;
+    word-wrap: break-word;
+    font-size: 20px;
+    text-align: center;
+  }
+  .page-with-video .video-block .contain-video-btn svg {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+  }
+  .page-with-video .video-img {
+    right: -24.591667vw;
+    width: 62.2vw;
+  }
+  .page-about-us {
+    margin-top: 4rem;
+    background-size: 30rem 33rem;
+    background-position: 42% 53%;
+  }
+  .page-about-us h2 {
+    font-size: 24px;
+  }
+  .page-about-us .items-row {
+    display: block;
+  }
+  .page-about-us .items-row .item {
+    width: 100%;
+  }
+  .page-about-us .items-row .item .left {
+    margin-right: 20px;
+  }
+  .page-about-us .items-row .item .left .icon {
+    margin: 20px 0 0 18px;
+    width: 50px;
+    height: 43px;
+  }
+  .page-about-us .items-row .item h3 {
+    font-size: 24px;
+    margin-top: 17px;
+  }
+  .page-about-us .items-row .item p {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 280px;
+  }
+  .page-about-us .items-row .item .blum {
+    width: 60px;
+    height: 55px;
+    filter: blur(10px);
+  }
+  .page-with-goals {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    background-image: none;
+  }
+  .page-with-goals h2 {
+    font-size: 24px;
+    line-height: 40px;
+    width: 310px;
+  }
+  .page-with-goals .goals-row .goal {
+    margin-top: 60px;
+    height: 282.13px;
+    width: 292px;
+    box-shadow: 0 0 45px #a90a3d;
+  }
+  .page-with-goals .goals-row .goal .icon.big-icon {
+    width: 62.76px;
+    height: 74.44px;
+  }
+  .page-with-goals .goals-row .goal p {
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .page-with-goals .bottom-h2 {
+    margin-top: 7rem;
+  }
+  .page-with-goals .btns-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-with-goals .btns-row .main-btn {
+    width: 330px;
+    height: 64px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .page-with-goals .btns-row .main-btn:nth-child(2) {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
